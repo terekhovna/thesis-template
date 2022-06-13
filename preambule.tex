@@ -1,0 +1,93 @@
+\usepackage{luatex85}
+\pdfminorversion=5
+
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage[a4paper, 
+lmargin=30mm, rmargin=15mm, tmargin=20mm, bmargin=20mm]{geometry}
+\usepackage{multirow}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+\setdefaultlanguage{russian}
+\setotherlanguage{english}
+
+% Согласно требованиям к ВКР
+\defaultfontfeatures{Ligatures=TeX}
+
+\setmainfont{Times New Roman}
+\setmonofont{Courier New}
+\setsansfont{Arial}
+
+\newfontfamily\cyrillicfont{Times New Roman}
+\newfontfamily\cyrillicfontsf{Arial}
+\newfontfamily\cyrillicfonttt{Courier New}
+
+\newfontfamily\englishfont{Times New Roman}
+\newfontfamily\englishfontsf{Arial}
+\newfontfamily\englishfonttt{Courier New}
+
+\linespread{1.5}
+
+\usepackage{titlesec}
+
+\titleformat{\section}{\normalfont\fontsize{14}{14}\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\fontsize{14}{14}\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\fontsize{14}{14}\bfseries}{\thesubsubsection}{1em}{}
+
+\setlength{\parindent}{1.25cm}
+
+\renewcommand\thesection{\arabic{section}}
+
+\usepackage[a-1b,mathxmp]{pdfx}
+\hypersetup{hidelinks,colorlinks=true,citecolor=BurntOrange,urlcolor=Blue}
+
+\usepackage[backend=biber,
+bibencoding=utf8,
+sorting=none,
+style=gost-numeric,
+language=autobib,
+autolang=other,
+clearlang=true,
+defernumbers=true,
+sortcites=true,
+doi=true,
+isbn=true,
+]{biblatex}
+
+\renewcommand{\UrlFont}{\small\rmfamily\tt}
+\appto{\bibsetup}{\raggedright}
+
+\bibliography{bibliography/betti}
+%\bibliography{bibliography/}
+
+
+\usepackage{amsfonts}
+
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{wrapfig}
+
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage{amsfonts, amssymb, amsmath, amsthm}
+\usepackage{mathtools}
+\usepackage{enumerate}
+\usepackage{verbatim}
+
+\usepackage{mathrsfs,amsfonts,mathtools}
+\usepackage{amsmath}          
+\usepackage{amssymb}
+
+\usepackage{amsthm} 
+\usepackage{thmtools}
+
+\usepackage{graphicx} 
+\graphicspath{{images/}}
+
+\renewcommand{\emptyset}{\varnothing}
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\phi}{\varphi}
+\renewcommand{\kappa}{\varkappa}
