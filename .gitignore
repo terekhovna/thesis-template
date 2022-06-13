@@ -3,7 +3,7 @@
 *.blg
 *.bbl
 *.out
-*.pdf
+# *.pdf
 *.toc
 *.gz
 *.xml
@@ -12,4 +12,4 @@
 *.xmpi
 *.snm
 !images/*.pdf
-tmp*
+# tmp*
